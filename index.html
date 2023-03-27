@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta description="Financial application" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/public/assets/Profile.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+    <title>Minhas Finanças 💰</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Minhas Finanças 💰</h1>
+    </header>
+
+    <main class="container">
+      <section id="balance">
+        <h2 class="sr-only">Balanço</h2>
+
+        <div class="card">
+          <h3>
+            <span>Entradas</span>
+            <img src="/public/assets/income.svg" alt="Imagem de Entradas" />
+          </h3>
+          <p id="incomeDisplay"></p>
+        </div>
+        <div class="card">
+          <h3>
+            <span>Saídas</span>
+            <img src="/public/assets/expense.svg" alt="Imagem de Saídas" />
+          </h3>
+          <p id="expenseDisplay"></p>
+        </div>
+        <div class="card total">
+          <h3>
+            <span>Total</span>
+            <img src="/public/assets/total.svg" alt="Imagem do Total" />
+          </h3>
+          <p id="totalDisplay"></p>
+        </div>
+      </section>
+
+      <section id="transaction">
+        <h2 class="sr-only">Transações</h2>
+
+        <a href="#" class="button new">
+          + Nova Transação
+        </a>
+
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Data</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div id="form">
+          <h2>Nova Transação</h2>
+          <form action="" onsubmit="Form.submit(event)">
+            <div class="input-group">
+              <label 
+                class="sr-only" 
+                for="description">Descrição</label>
+              <input
+                type="text"
+                name="description"
+                id="description"
+                placeholder="Descrição"
+              />
+            </div>
+
+            <div class="input-group">
+              <label class="sr-only" for="amount">Descrição</label>
+              <input
+                type="number"
+                step="0.01"
+                name="amount"
+                id="amount"
+                placeholder="0,00"
+              />
+            </div>
+
+            <small class="help">
+              Use o sina - (negativo) para despesas e . (ponto) para casas
+              decimais
+            </small>
+
+            <div class="input-group">
+              <label class="sr-only" for="date">Descrição</label>
+              <input type="date" name="date" id="date" />
+            </div>
+
+            <div class="input-group actions">
+              <a onclick="Modal.close()" href="#" class="button cancel"
+                >Cancelar</a
+              >
+              <button type="submit">Salvar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Minhas Finanças 💰</p>
+      <p>
+        Desenvolvido por <a href="https://my-portfolio-fc.onrender.com">Felizardo Caculo ✌️</a>
+      </p>
+    </footer>
+  </body>
+</html>
