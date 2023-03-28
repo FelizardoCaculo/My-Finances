@@ -142,7 +142,7 @@ header {
 }
 
 .card p {
-    font-size: 1.8rem;
+    font-size: 1rem;
     line-height: 3rem;
     margin-top: 1rem;
 }
@@ -158,7 +158,7 @@ header {
 }
 
 #expenseDisplay {
-    color: #f50808;
+    color: var(--green);
 }
 
 /* Table ===============================*/
@@ -309,5 +309,11 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+    }
+}
+
+@media(min-width: 600px) {
+    td.date {
+        font-size: 1rem;
     }
 }
