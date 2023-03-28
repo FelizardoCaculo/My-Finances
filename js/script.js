@@ -120,8 +120,8 @@ const DOM = {
 const Utils = {
     formatAmount(value) {
         //remove unnecessary characters entered by the user
-        value = Number(value) * 100;
-        return value;
+        value = value * 100;
+        return Math.round(value);
     },
 
     formatDate(date) {
@@ -223,12 +223,11 @@ const App = {
         });
         
         DOM.updateBalance();
-
+        
         Storage.set(Transaction.all)
     },
     reload(){
         DOM.clearTransactions();
-
         App.init();
     }
 }
