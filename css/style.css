@@ -1,9 +1,9 @@
 /* Global ===============================*/
 :root {
-    --dark-blue: #363f5f;
-    --green: #49AA26;
-    --light-green: #3dd705;
-    --red: #d32e2e;
+    --dark-blue: #141414;
+    --green: #15480F;
+    --light-green: #1B6105;
+    --red: #AA2222;
     --light-red: #f50808;
 }
 
@@ -12,6 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana,Geneva,sans-serif; 
+    font-display: swap;
 }
 
 html {
@@ -101,14 +102,17 @@ button:hover {
 
 /* Header ===============================*/
 header {
-    background: #2D4A22;
+    background: var(--green);
     padding: 2rem 0 10rem;
     text-align: center;
+    display: flex;
 }
 
-#logo {
+.logo {
     color: #fff;
     font-weight: 100;
+    width: 300px;
+    margin-inline: auto;
 }
 
 
@@ -126,8 +130,9 @@ header {
 
 /* Cards ===============================*/
 .card {
-    background: white;
+    background: #FFFFFF;
     padding: 1.5rem 1rem;
+    border: 2px solid #0a0a0a;
     border-radius: 0.25rem;
     margin-bottom: 2rem;
     color: var(--dark-blue);
@@ -139,6 +144,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #050505;
 }
 
 .card p {
@@ -151,11 +157,14 @@ header {
     background: var(--green);
     color: white;
     font-size: 1rem;
+}
 
+.card.total h3 {
+    color: white;
 }
 
 #incomeDisplay {
-    color: #3dd705;
+    color: #316213;
     font-size: 1rem;
 }
 
@@ -190,23 +199,16 @@ table tbody tr td:last-child {
 table thead th {
     background: white;
     opacity: 0.6;
-    color: #969cb3;
+    color: var(--dark-blue);
     font-weight: normal;
     padding: 1rem 2rem;
     text-align: left;
 }
 
-table tbody tr {
-    opacity: 0.7;
-}
-
-table tbody tr:hover {
-    opacity: 1;
-}
-
 table td {
     background: white;
     padding: 1rem 2rem;
+    color: var(--dark-blue);
     
 }
 
@@ -215,11 +217,11 @@ td.description {
 }
 
 td.income {
-    color: #12a454;
+    color: #0B6031;
 }
 
 td.expense {
-    color: #e92929 ;
+    color: var(--red);
 }
 
 
@@ -293,7 +295,7 @@ footer {
     text-align: center;
     padding: 4rem 0 2rem;
     color: var(--dark-blue);
-    opacity: 0.6;
+    opacity: 0.9;
 }
 
 
