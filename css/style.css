@@ -311,3 +311,9 @@ footer {
         gap: 2rem;
     }
 }
+
+@media(min-width: 600px) {
+    html {
+        font-size: 66.5%;
+    }
+}
