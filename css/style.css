@@ -316,20 +316,8 @@ footer {
     html {
         font-size: 66.5%;
     }
-    
-    td.description {
-        font-size: 0.5rem;
-}
 
-    td.income {
-        font-size: 0.5rem;
-    }
-
-    td.expense {
-        font-size: 0.5rem;
-    }
-    
     td.date {
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 }
