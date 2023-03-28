@@ -150,15 +150,18 @@ header {
 .card.total {
     background: var(--green);
     color: white;
+    font-size: 1rem;
 
 }
 
 #incomeDisplay {
     color: #3dd705;
+    font-size: 1rem;
 }
 
 #expenseDisplay {
-    color: var(--green);
+    color: var(--red);
+    font-size: 1rem;
 }
 
 /* Table ===============================*/
