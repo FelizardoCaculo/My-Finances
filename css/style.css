@@ -313,10 +313,6 @@ footer {
 }
 
 @media(min-width: 600px) {
-    html {
-        font-size: 66.5%;
-    }
-
     td.date {
         font-size: 1rem;
     }
