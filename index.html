@@ -20,11 +20,9 @@
     <header>
       <h1 class="logo">Minhas Finanças 💰</h1>
     </header>
-
     <main class="container">
       <section id="balance">
         <h2 class="sr-only">Balanço</h2>
-
         <div class="card">
           <h3>
             <span>Entradas</span>
@@ -59,14 +57,11 @@
           <p id="totalDisplay"></p>
         </div>
       </section>
-
       <section id="transaction">
         <h2 class="sr-only">Transações</h2>
-
         <a onclick="Modal.open()" href="#" class="button new">
           + Nova Transação
         </a>
-
         <table id="data-table">
           <thead>
             <tr>
@@ -80,7 +75,6 @@
         </table>
       </section>
     </main>
-
     <div class="modal-overlay">
       <div class="modal">
         <div id="form">
@@ -97,7 +91,6 @@
                 placeholder="Descrição"
               />
             </div>
-
             <div class="input-group">
               <label class="sr-only" for="amount">Descrição</label>
               <input
@@ -108,17 +101,14 @@
                 placeholder="0,00"
               />
             </div>
-
             <small class="help">
               Use o sina - (negativo) para despesas e , (vírgula) para casas
               decimais
             </small>
-
             <div class="input-group">
               <label class="sr-only" for="date">Descrição</label>
               <input type="date" name="date" id="date" />
             </div>
-
             <div class="input-group actions">
               <a onclick="Modal.close()" href="#" class="button cancel"
                 >Cancelar</a
@@ -129,7 +119,6 @@
         </div>
       </div>
     </div>
-
     <footer>
       <p>Minhas Finanças 💰</p>
       <p>
