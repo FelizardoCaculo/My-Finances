@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta name="description" content="Application for Finacial Control">
+    <meta name="description" content="Application for Finacial Control" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/Profile.jpg" 
+      href="./assets/Profile.jpg"
       width="200px"
       heigth="201px"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./css/style.css"/>
-    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer="defer"></script>
     <title>Minhas Finanças 💰</title>
   </head>
   <body>
@@ -26,33 +26,36 @@
         <div class="card">
           <h3>
             <span>Entradas</span>
-            <img 
-              src="./assets/income.svg" 
-              width="32px" 
-              height="32px" 
-              alt="Imagem de Entradas" />
+            <img
+              src="./assets/income.svg"
+              width="32px"
+              height="32px"
+              alt="Imagem de Entradas"
+            />
           </h3>
           <p id="incomeDisplay"></p>
         </div>
         <div class="card">
           <h3>
             <span>Saídas</span>
-            <img 
-              src="./assets/expense.svg" 
-              width="32px" 
-              height="32px" 
-              alt="Imagem de Saídas" />
+            <img
+              src="./assets/expense.svg"
+              width="32px"
+              height="32px"
+              alt="Imagem de Saídas"
+            />
           </h3>
           <p id="expenseDisplay"></p>
         </div>
         <div class="card total">
           <h3>
             <span>Total</span>
-            <img 
-              src="./assets/total.svg" 
-              width="32px" 
-              height="32px" 
-              alt="Imagem do Total" />
+            <img
+              src="./assets/total.svg"
+              width="32px"
+              height="32px"
+              alt="Imagem do Total"
+            />
           </h3>
           <p id="totalDisplay"></p>
         </div>
@@ -81,10 +84,9 @@
           <h2>Nova Transação</h2>
           <form action="" onsubmit="Form.submit(event)">
             <div class="input-group">
-              <label 
-                class="sr-only" 
-                for="description">Descrição</label>
+              <label class="sr-only" for="description">Descrição</label>
               <input
+                required="required"
                 type="text"
                 name="description"
                 id="description"
@@ -94,6 +96,7 @@
             <div class="input-group">
               <label class="sr-only" for="amount">Descrição</label>
               <input
+                required="required"
                 type="number"
                 step="0.01"
                 name="amount"
@@ -107,12 +110,12 @@
             </small>
             <div class="input-group">
               <label class="sr-only" for="date">Descrição</label>
-              <input type="date" name="date" id="date" />
+              <input required="required" type="date" name="date" id="date" />
             </div>
             <div class="input-group actions">
-              <a onclick="Modal.close()" href="#" class="button cancel"
-                >Cancelar</a
-              >
+              <a onclick="Modal.close()" href="#" class="button cancel">
+                Cancelar
+              </a>
               <button type="submit">Salvar</button>
             </div>
           </form>
@@ -122,7 +125,8 @@
     <footer>
       <p>Minhas Finanças 💰</p>
       <p>
-        Desenvolvido por <a href="https://my-portfolio-fc.onrender.com">Felizardo Caculo ✌️</a>
+        Desenvolvido por
+        <a href="https://my-portfolio-fc.onrender.com">Felizardo Caculo ✌️</a>
       </p>
     </footer>
   </body>
